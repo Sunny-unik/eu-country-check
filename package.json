@@ -1,0 +1,23 @@
+{
+  "name": "eu-country-check",
+  "version": "1.0.0",
+  "description": "check provided country code belongs from European countries or not.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sunny-unik/eu-country-check.git"
+  },
+  "keywords": ["isEuCountry","countryCode"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sunny-unik/eu-country-check/issues"
+  },
+  "homepage": "https://github.com/Sunny-unik/eu-country-check#readme",
+  "devDependencies": {
+    "@types/node": "^18.7.3"
+  }
+}
