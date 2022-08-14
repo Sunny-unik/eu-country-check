@@ -1,6 +1,6 @@
 # eu-country-check
 
-This project is to check provided country code belongs from European countries or not.
+This project is to check if given country-code is part of the EU (European Union) or EEA (European Economic Area).
 
 # Installation
 
@@ -19,7 +19,7 @@ console.log(isEuCountry('AX')); //true
 
 ## Options
 
-**eu-country-check** contains 4 functions:
+**eu-country-check** contains 2 functions:
 
 - `isEuCountry(countryCode:string)` - _countryCode_ is required.
 - `listEuCodes()`
