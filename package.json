@@ -1,6 +1,6 @@
 {
   "name": "eu-country-check",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Check if given countryCode is part of the European countries",
   "homepage": "https://github.com/Sunny-unik/eu-country-check",
   "main": "dist/index.js",
@@ -12,12 +12,15 @@
     "type": "git",
     "url": "git+https://github.com/Sunny-unik/eu-country-check.git"
   },
-  "keywords": ["isEuCountry","countryCode"],
+  "keywords": [
+    "isEuCountry",
+    "countryCode"
+  ],
   "author": {
     "email": "sunnygandhwani027@gmail.com",
     "name": "Sunny.dev"
   },
-  "license": "GPL-3.0 license",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Sunny-unik/eu-country-check/issues"
   },

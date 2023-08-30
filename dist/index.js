@@ -31,12 +31,8 @@ const EuCountries = [
 ];
 const isEuCountry = (countryCode) => EuCountries.includes(countryCode);
 const listEuCodes = () => EuCountries;
-// const listEuCountries = () => Object.values(EuCountries);
-// const listEuCodesAndCountries = () => EuCountries;
 module.exports = {
     isEuCountry: isEuCountry,
     listEuCodes: listEuCodes,
-    // listEuCountries: listEuCountries,
-    // listEuCodesAndCountries: listEuCodesAndCountries,
 };
 //# sourceMappingURL=index.js.map

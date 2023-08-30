@@ -34,13 +34,7 @@ const isEuCountry = (countryCode: string): boolean =>
 
 const listEuCodes = (): string[] => EuCountries;
 
-// const listEuCountries = () => Object.values(EuCountries);
-
-// const listEuCodesAndCountries = () => EuCountries;
-
 module.exports = {
   isEuCountry: isEuCountry,
   listEuCodes: listEuCodes,
-  // listEuCountries: listEuCountries,
-  // listEuCodesAndCountries: listEuCodesAndCountries,
 };
