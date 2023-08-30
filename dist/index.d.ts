@@ -1,4 +1,2 @@
-declare const EuCountries: string[];
-declare const isEuCountry: (countryCode: string) => boolean;
-declare const listEuCodes: () => string[];
-//# sourceMappingURL=index.d.ts.map
+export declare const isEuCountry: (countryCode: string) => boolean;
+export declare const listEuCodes: () => string[];

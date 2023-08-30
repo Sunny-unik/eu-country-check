@@ -29,12 +29,7 @@ const EuCountries: string[] = [
   "SE",
 ];
 
-const isEuCountry = (countryCode: string): boolean =>
+export const isEuCountry = (countryCode: string): boolean =>
   EuCountries.includes(countryCode);
 
-const listEuCodes = (): string[] => EuCountries;
-
-module.exports = {
-  isEuCountry: isEuCountry,
-  listEuCodes: listEuCodes,
-};
+export const listEuCodes = (): string[] => EuCountries;

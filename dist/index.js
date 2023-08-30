@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.listEuCodes = exports.isEuCountry = void 0;
 // List of CountryCodes that consists in european countries
 const EuCountries = [
     "AT",
@@ -30,9 +32,6 @@ const EuCountries = [
     "SE",
 ];
 const isEuCountry = (countryCode) => EuCountries.includes(countryCode);
+exports.isEuCountry = isEuCountry;
 const listEuCodes = () => EuCountries;
-module.exports = {
-    isEuCountry: isEuCountry,
-    listEuCodes: listEuCodes,
-};
-//# sourceMappingURL=index.js.map
+exports.listEuCodes = listEuCodes;
