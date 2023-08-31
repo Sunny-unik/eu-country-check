@@ -1,6 +1,6 @@
 # eu-country-check
 
-This project is to check if given country-code is part of the EU (European Union).
+This project is to check if given country-code/country-name is part of the EU (European Union) or EEA (European Economic Area).
 
 # Installation
 
@@ -12,14 +12,18 @@ or
 
 Then...
 
-```javascript
-import { isEuCountry } from "eu-country-check";
-console.log(isEuCountry("AT")); //true
+```typescript
+import { isEUCountry, isEEACountry } from "eu-country-check";
+
+console.log(isEUCountry("040")); // { name: 'Austria', alpha2: 'AT', alpha3: 'AUT', numeric: '040' }
+console.log(isEEACountry("NO")); // { name: 'Norway', alpha2: 'NO', alpha3: 'NOR', numeric: '578' }
 ```
 
 ## Functions
 
 **eu-country-check** contains 2 functions:
 
-- `isEuCountry(countryCode:string)` - _countryCode_ (alpha2) is required.
-- `listEuCodes()`
+- `isEUCountry(countryCode: string)`
+- `isEEACountry(countryCode: string)`
+
+~ &nbsp;"_countryCode_" is required parameter that could be name, alpha2, alpha3 or numeric code.
