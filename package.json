@@ -1,12 +1,13 @@
 {
   "name": "eu-country-check",
-  "version": "1.0.4",
+  "version": "1.2.0",
   "description": "Check if given countryCode is part of the European countries",
   "homepage": "https://github.com/Sunny-unik/eu-country-check",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "local-publish": "npm run build && local-package-publisher -p"
   },
   "repository": {
     "type": "git",
