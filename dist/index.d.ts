@@ -1,2 +1,3 @@
-export declare const isEuCountry: (countryCode: string) => boolean;
-export declare const listEuCodes: () => string[];
+import { CountriesInfoInterface } from "./data";
+export declare const isEUCountry: (countryInput: string) => false | undefined | CountriesInfoInterface;
+export declare const isEEACountry: (countryInput: string) => false | undefined | CountriesInfoInterface;

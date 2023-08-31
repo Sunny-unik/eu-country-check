@@ -1,35 +1,22 @@
-// List of CountryCodes that consists in european countries
-const EuCountries: string[] = [
-  "AT",
-  "BE",
-  "BG",
-  "HR",
-  "CY",
-  "CZ",
-  "DK",
-  "EE",
-  "FI",
-  "FR",
-  "DE",
-  "GR",
-  "HU",
-  "IE",
-  "IT",
-  "LV",
-  "LT",
-  "LU",
-  "MT",
-  "NL",
-  "PL",
-  "PT",
-  "RO",
-  "SK",
-  "SI",
-  "ES",
-  "SE",
-];
+import { CountriesInfoInterface, EuCountries, EeaCountries } from "./data";
 
-export const isEuCountry = (countryCode: string): boolean =>
-  EuCountries.includes(countryCode);
+const isEqual = (str1: string, str2: string) =>
+  str1.toLowerCase() === str2.toLowerCase();
 
-export const listEuCodes = (): string[] => EuCountries;
+const getValidator = (countryInput: string) => {
+  if (!!+countryInput)
+    return (item: CountriesInfoInterface) => countryInput + "" === item.numeric;
+  if (countryInput.length === 2)
+    return (item: CountriesInfoInterface) => isEqual(countryInput, item.alpha2);
+  if (countryInput.length === 3)
+    return (item: CountriesInfoInterface) => isEqual(countryInput, item.alpha3);
+  return (item: CountriesInfoInterface) => isEqual(countryInput, item.name);
+};
+
+const commonProvider =
+  (validList: CountriesInfoInterface[]) =>
+  (countryInput: string): false | undefined | CountriesInfoInterface =>
+    !countryInput ? false : validList.find(getValidator(countryInput));
+
+export const isEUCountry = commonProvider(EuCountries);
+export const isEEACountry = commonProvider(EeaCountries);
