@@ -1,0 +1,7 @@
+tsconfig.json
+CHANGELOG.md
+test/
+.github/
+index.ts
+data/
+.local-pack/
