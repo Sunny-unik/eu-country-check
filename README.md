@@ -1,14 +1,24 @@
+<div align="center">
+  
 # eu-country-check
 
-This project is to check if given country-code/country-name is part of the EU (European Union) or EEA (European Economic Area).
+> This package is to check if the given country-code/country-name is part of the EU (European Union) or EEA (European Economic Area).
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/Sunny-unik/eu-country-check)
+
+</div>
 
 # Installation
 
-`npm i eu-country-check`
+```bash
+npm i eu-country-check
+```
 
 or
 
-`yarn add eu-country-check`
+```bash
+yarn add eu-country-check
+```
 
 Then...
 
@@ -27,3 +37,7 @@ console.log(isEEACountry("NO")); // { name: 'Norway', alpha2: 'NO', alpha3: 'NOR
 - `isEEACountry(countryCode: string)`
 
 ~ &nbsp;"_countryCode_" is required parameter that could be name, alpha2, alpha3 or numeric code.
+
+## ⚖️ LICENSE
+
+MIT © [Sunny-unik/eu-country-check](LICENSE)
