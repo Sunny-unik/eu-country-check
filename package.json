@@ -2,7 +2,7 @@
   "name": "eu-country-check",
   "version": "1.2.1",
   "description": "Check if given countryCode is part of the European countries",
-  "homepage": "https://github.com/Sunny-unik/eu-country-check",
+  "homepage": "https://euc-check-docs.vercel.app/",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
