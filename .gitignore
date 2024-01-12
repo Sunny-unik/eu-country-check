@@ -105,3 +105,6 @@ typings/
 
 # set local package
 .local-pack/
+
+# build dir
+dist/
