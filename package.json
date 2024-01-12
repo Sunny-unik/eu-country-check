@@ -14,7 +14,8 @@
     "url": "git+https://github.com/Sunny-unik/eu-country-check.git"
   },
   "keywords": [
-    "isEuCountry",
+    "isEUCountry",
+    "isEEACountry",
     "countryCode"
   ],
   "author": {
@@ -26,7 +27,8 @@
     "url": "https://github.com/Sunny-unik/eu-country-check/issues"
   },
   "devDependencies": {
-    "@types/node": "^18.7.3"
+    "@types/node": "^18.7.3",
+    "local-package-publisher": "^1.0.5"
   },
   "engines": {
     "node": ">= 12"
