@@ -1,6 +1,6 @@
 {
   "name": "eu-country-check",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Check if given countryCode is part of the European countries",
   "homepage": "https://euc-check-docs.vercel.app/",
   "main": "dist/index.js",

@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
-- PATCH Readme & documentation link in package.json.
+- Updated the homepage property in package.json, it also updated the documentation link in npmjs.com.
+- Added CHANGELOG.md file that contains all release information about older changes.
 
 ## [1.2.1] - 2023-09-02
 
